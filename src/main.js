@@ -6,7 +6,6 @@ getProducts().then((products) => {
     renderError('Failed to load products.');
   } else {
     hideError();
-    console.log(products.data)
     renderProducts(products.data);
   }
 });
